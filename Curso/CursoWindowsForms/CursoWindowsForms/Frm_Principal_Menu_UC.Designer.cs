@@ -47,8 +47,12 @@ namespace CursoWindowsForms
             this.açõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.abrirImagemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.windowsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.Tbc_Aplicacoes = new System.Windows.Forms.TabControl();
             this.Iml_Images = new System.Windows.Forms.ImageList(this.components);
+            this.byteBankToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Mnu_Principal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,8 +60,10 @@ namespace CursoWindowsForms
             // 
             this.Mnu_Principal.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.arquivoToolStripMenuItem,
+            this.byteBankToolStripMenuItem,
             this.açõesToolStripMenuItem,
-            this.windowsToolStripMenuItem});
+            this.windowsToolStripMenuItem,
+            this.toolStripMenuItem1});
             this.Mnu_Principal.Location = new System.Drawing.Point(0, 0);
             this.Mnu_Principal.Name = "Mnu_Principal";
             this.Mnu_Principal.Size = new System.Drawing.Size(800, 24);
@@ -192,6 +198,11 @@ namespace CursoWindowsForms
             this.windowsToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
             this.windowsToolStripMenuItem.Text = "Windows";
             // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(12, 20);
+            // 
             // Tbc_Aplicacoes
             // 
             this.Tbc_Aplicacoes.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -214,6 +225,33 @@ namespace CursoWindowsForms
             this.Iml_Images.Images.SetKeyName(4, "Frm_ValidaCPF2.png");
             this.Iml_Images.Images.SetKeyName(5, "Frm_ValidaSenha.png");
             this.Iml_Images.Images.SetKeyName(6, "icons8-live-folder-80.png");
+            this.Iml_Images.Images.SetKeyName(7, "user.png");
+            // 
+            // byteBankToolStripMenuItem
+            // 
+            this.byteBankToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cadastrosToolStripMenuItem});
+            this.byteBankToolStripMenuItem.Image = global::CursoWindowsForms.Properties.Resources.money;
+            this.byteBankToolStripMenuItem.Name = "byteBankToolStripMenuItem";
+            this.byteBankToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
+            this.byteBankToolStripMenuItem.Text = "ByteBank";
+            // 
+            // cadastrosToolStripMenuItem
+            // 
+            this.cadastrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.clientesToolStripMenuItem});
+            this.cadastrosToolStripMenuItem.Image = global::CursoWindowsForms.Properties.Resources.Cadastros;
+            this.cadastrosToolStripMenuItem.Name = "cadastrosToolStripMenuItem";
+            this.cadastrosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cadastrosToolStripMenuItem.Text = "Cadastros";
+            // 
+            // clientesToolStripMenuItem
+            // 
+            this.clientesToolStripMenuItem.Image = global::CursoWindowsForms.Properties.Resources.user;
+            this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.clientesToolStripMenuItem.Text = "Clientes";
+            this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
             // 
             // Frm_Principal_Menu_UC
             // 
@@ -255,5 +293,9 @@ namespace CursoWindowsForms
         private System.Windows.Forms.ToolStripMenuItem apagarAbaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem conectarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem desconectarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem byteBankToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cadastrosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem;
     }
 }
